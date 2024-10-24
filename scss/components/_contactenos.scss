@@ -1,0 +1,86 @@
+.section-contacto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    .formulario-contacto{
+        background-color: gainsboro;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 15px;
+        width: 100%;
+        max-width: 600px;
+        margin-top: 40px;
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+            label{
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            .form-row{
+                width: 48%;
+            }
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button{
+            padding: 12px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            &:hover{
+                background-color: #000000;
+            }
+        }
+    }
+}
+.sucursales{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 3;
+    margin: 100px;
+    flex-wrap: wrap;
+    .location-box{
+        flex-direction: row;
+        
+        flex-wrap: wrap;
+        .box-info{
+            background-color: gainsboro;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px;
+            text-align: center;
+            width: 350px;
+            align-items: center;
+            flex-wrap: wrap;
+            img{
+                width: 40px;
+                height: 40px;
+                margin-bottom: 10px;
+            }
+            h3{
+                color: #007bff;
+                font-weight: bold;
+            }
+        }
+    }
+}

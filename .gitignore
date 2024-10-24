@@ -1,2 +1,4 @@
 # wireframe
-.wireframe
+wireframe/
+*.txt
+node_modules/

@@ -1,0 +1,864 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: rgb(202, 202, 202);
+  padding: 20px;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+header a {
+  text-decoration: none;
+}
+header a h1 {
+  color: rgb(6, 75, 165);
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-left: 10px;
+}
+header nav ul {
+  list-style: none;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li {
+  margin-right: 10px;
+}
+header nav ul li a {
+  color: black;
+  margin-right: 15px;
+  font-weight: bold;
+}
+header nav ul li a:hover {
+  color: rgb(6, 75, 165);
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-caption a {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(6, 75, 165);
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+.carousel-caption a:hover {
+  background-color: black;
+}
+
+.galeria-grid3 h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left: 106px;
+}
+.galeria-grid3 .car-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  text-align: center;
+}
+.galeria-grid3 .car-container img {
+  width: 550px;
+  height: 400px;
+  flex-direction: row;
+  object-fit: cover;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+.galeria-grid3 .car-container h3 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.galeria-grid3 .car-container h4 {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(90, 90, 90);
+}
+.galeria-grid3 .car-container a {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  background-color: rgb(6, 75, 165);
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+.galeria-grid3 .car-container a:hover {
+  background-color: black;
+}
+
+.section2 .mitad-flex {
+  display: flex;
+  height: 100vh;
+  margin-top: 100px;
+}
+.section2 .mitad-flex .imagen {
+  display: flex;
+  flex: 3;
+}
+.section2 .mitad-flex .imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section2 .mitad-flex .text {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  margin-left: 40px;
+}
+.section2 .mitad-flex .text h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: black;
+  font-size: 40px;
+}
+.section2 .mitad-flex .text p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-weight: bold;
+  color: rgb(90, 90, 90);
+}
+.section2 .mitad-flex .text a {
+  display: inline-block;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  background-color: rgb(6, 75, 165);
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  width: 240px;
+  text-align: left;
+}
+.section2 .mitad-flex .text a:hover {
+  background-color: black;
+}
+
+.section3 .mitad-flex2 {
+  display: flex;
+  height: 100vh;
+}
+.section3 .mitad-flex2 .text2 {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 40px;
+  margin-right: 10px;
+}
+.section3 .mitad-flex2 .text2 h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: black;
+  font-size: 40px;
+}
+.section3 .mitad-flex2 .text2 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-weight: bold;
+  color: rgb(90, 90, 90);
+}
+.section3 .mitad-flex2 .text2 a {
+  display: inline-block;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  background-color: rgb(6, 75, 165);
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  width: 210px;
+  text-align: left;
+}
+.section3 .mitad-flex2 .text2 a:hover {
+  background-color: black;
+}
+.section3 .mitad-flex2 .imagen2 {
+  display: flex;
+  flex: 3;
+}
+.section3 .mitad-flex2 .imagen2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section4 .mitad-flex3 {
+  display: flex;
+  height: 100hv;
+}
+.section4 .mitad-flex3 .imagen3 {
+  display: flex;
+  flex: 3;
+}
+.section4 .mitad-flex3 .imagen3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section4 .mitad-flex3 .text3 {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 40px;
+  margin-right: 10px;
+}
+.section4 .mitad-flex3 .text3 h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: black;
+  font-size: 40px;
+}
+.section4 .mitad-flex3 .text3 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-weight: bold;
+  color: rgb(90, 90, 90);
+}
+.section4 .mitad-flex3 .text3 a {
+  display: inline-block;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  background-color: rgb(6, 75, 165);
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  width: 230px;
+  text-align: left;
+}
+.section4 .mitad-flex3 .text3 a:hover {
+  background-color: black;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+footer .logo-footer {
+  grid-column: span 2;
+}
+footer .logo-footer h2 {
+  color: rgb(6, 75, 165);
+  margin-bottom: 10px;
+}
+footer .logo-footer p {
+  color: white;
+}
+footer .links-footer h3 {
+  margin-bottom: 10px;
+  color: rgb(6, 75, 165);
+}
+footer .links-footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer .links-footer ul li {
+  margin-bottom: 8px;
+}
+footer .links-footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+footer .links-footer ul li a:hover {
+  text-decoration: underline;
+}
+footer .contacto-footer h3 {
+  margin-bottom: 10px;
+  color: rgb(6, 75, 165);
+}
+footer .contacto-footer p {
+  color: white;
+}
+footer .redes-footer {
+  text-align: left;
+  color: rgb(6, 75, 165);
+}
+footer .redes-footer h3 {
+  margin-bottom: 10px;
+  text-align: left;
+  color: rgb(6, 75, 165);
+}
+footer .redes-footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer .redes-footer ul li {
+  margin-bottom: 8px;
+}
+footer .redes-footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+footer .redes-footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.section-contacto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.section-contacto .formulario-contacto {
+  background-color: gainsboro;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 40px;
+}
+.section-contacto .formulario-contacto h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.section-contacto .formulario-contacto .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.section-contacto .formulario-contacto .form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.section-contacto .formulario-contacto .form-group .form-row {
+  width: 48%;
+}
+.section-contacto .formulario-contacto form {
+  display: flex;
+  flex-direction: column;
+}
+.section-contacto .formulario-contacto input[type=text], .section-contacto .formulario-contacto input[type=email], .section-contacto .formulario-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.section-contacto .formulario-contacto button {
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.section-contacto .formulario-contacto button:hover {
+  background-color: #000000;
+}
+
+.sucursales {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 3;
+  margin: 100px;
+  flex-wrap: wrap;
+}
+.sucursales .location-box {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.sucursales .location-box .box-info {
+  background-color: gainsboro;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px;
+  text-align: center;
+  width: 350px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sucursales .location-box .box-info img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.sucursales .location-box .box-info h3 {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.brand-new-cars-container {
+  display: flex;
+  background-color: #ebeaea;
+}
+.brand-new-cars-container .checkbox-car-list {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: left;
+  padding: 20px;
+  width: 100%;
+}
+.brand-new-cars-container .checkbox-car-list h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.brand-new-cars-container .checkbox-car-list .car-filter {
+  flex: 1;
+  flex-direction: column;
+}
+.brand-new-cars-container .checkbox-car-list .car-filter button {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(6, 75, 165);
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: #fff;
+}
+.brand-new-cars-container .checkbox-car-list .car-filter label {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  margin: 5px 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.brand-new-cars-container .otra-mitad {
+  display: flex;
+  flex: 4;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  background-color: rgb(244, 245, 245);
+  margin-bottom: 50px;
+}
+.brand-new-cars-container .otra-mitad .car-container {
+  flex: 4;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  align-items: center;
+  text-align: center;
+}
+.brand-new-cars-container .otra-mitad .car-container .vehicle-container {
+  width: 350px;
+  height: 250px;
+  flex-direction: row;
+  object-fit: cover;
+  align-items: center;
+}
+.brand-new-cars-container .otra-mitad .car-container h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: medium;
+}
+.brand-new-cars-container .otra-mitad .car-container h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: medium;
+}
+.brand-new-cars-container .otra-mitad .car-container a {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(6, 75, 165);
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: #fff;
+}
+
+@media screen and (max-width: 1551px) {
+  header {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  }
+  .galeria-grid3 {
+    text-align: center;
+    margin-left: 0;
+  }
+  .galeria-grid3 .car-container {
+    flex-wrap: wrap;
+  }
+  .galeria-grid3 .car-container div img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1377px) {
+  header {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+  .carousel {
+    width: 100%;
+  }
+  .galeria-grid3 {
+    text-align: center;
+  }
+  .galeria-grid3 .car-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .galeria-grid3 .car-container div {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .galeria-grid3 .car-container div img {
+    width: 400px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 980px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+  .galeria-grid3 {
+    justify-content: center;
+  }
+  .galeria-grid3 .car-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .galeria-grid3 .car-container div {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .galeria-grid3 .car-container div img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 801px) {
+  header {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: left;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  body .carousel {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+  }
+  body .carousel-inner img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  body .galeria-grid3 {
+    display: none;
+  }
+  body .mitad-flex {
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  body .mitad-flex .text {
+    font-size: 14px;
+  }
+  body .mitad-flex2 {
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  body .mitad-flex2 .text2 {
+    font-size: 14px;
+  }
+  body .mitad-flex3 {
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  body .mitad-flex3 .text3 {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .location-box {
+    justify-content: center;
+    align-items: center;
+  }
+  .box-info {
+    justify-content: center;
+    align-items: center;
+  }
+  .brand-new-cars-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ebeaea;
+  }
+  .brand-new-cars-container .checkbox-car-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+  }
+  .brand-new-cars-container .checkbox-car-list h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .brand-new-cars-container .checkbox-car-list h3 {
+    display: none;
+  }
+  .brand-new-cars-container .checkbox-car-list .car-filter {
+    display: flex;
+    flex-direction: row;
+    display: none;
+  }
+  .brand-new-cars-container .checkbox-car-list .car-filter button {
+    color: white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: rgb(6, 75, 165);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: #fff;
+  }
+  .brand-new-cars-container .checkbox-car-list .car-filter label {
+    display: none;
+  }
+  .brand-new-cars-container .otra-mitad {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    background-color: rgb(244, 245, 245);
+    margin-bottom: 50px;
+  }
+  .brand-new-cars-container .otra-mitad .car-container {
+    flex: 5;
+  }
+  .brand-new-cars-container .otra-mitad .car-container .vehicle-container {
+    width: 300px;
+    flex-direction: column;
+  }
+  .brand-new-cars-container .otra-mitad .car-container h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+  }
+  .brand-new-cars-container .otra-mitad .car-container h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+  }
+  .brand-new-cars-container .otra-mitad .car-container a {
+    color: white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: rgb(6, 75, 165);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: #fff;
+  }
+}
+@media screen and (max-width: 471px) {
+  footer .logo-footer {
+    display: none;
+  }
+  footer .links-footer {
+    display: none;
+    font-size: small;
+  }
+  footer .contacto-footer {
+    grid-template-columns: 1fr;
+  }
+  footer .redes-footer {
+    grid-template-columns: 1fr;
+    display: none;
+  }
+  .location-box {
+    display: none;
+  }
+  .box-info {
+    background-color: gainsboro;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px;
+    text-align: center;
+    width: 50px;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 344px) {
+  footer .redes-footer {
+    display: none;
+  }
+  .location-box {
+    padding: 0;
+    margin: 0;
+    width: 250px;
+  }
+}
+@media screen and (max-width: 328px) {
+  header {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: left;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  body .carousel {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+  }
+  body .carousel-inner img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  body .galeria-grid3 {
+    display: none;
+  }
+  body .mitad-flex {
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: whitesmoke;
+  }
+  body .mitad-flex .text {
+    font-size: 14px;
+    text-align: left;
+  }
+  body .mitad-flex2 {
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  body .mitad-flex2 .text2 {
+    font-size: 14px;
+    text-align: left;
+  }
+  body .mitad-flex3 {
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  body .mitad-flex3 .text3 {
+    font-size: 14px;
+    text-align: left;
+  }
+  body .otra-mitad {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    background-color: rgb(244, 245, 245);
+    margin-bottom: 50px;
+  }
+  body .otra-mitad .car-container .vehicle-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  body .otra-mitad .car-container h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+  }
+  body .otra-mitad .car-container h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+  }
+  body .otra-mitad .car-container a {
+    color: white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: rgb(6, 75, 165);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: #fff;
+  }
+  footer .logo-footer {
+    grid-template-columns: 1fr;
+  }
+  footer .links-footer {
+    grid-template-columns: 1fr;
+  }
+  footer .redes-footer {
+    grid-template-columns: 1fr;
+  }
+  footer .contacto-footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,33 @@
+@font-face{
+    font-family: 'FuentePersonalizada';
+    src:url('../../fonts/Roboto-Black.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;  
+}
+
+$fuente-principal: 'FuentePersonalizada', sans-serif;
+
+$text-color: rgb(90, 90, 90);
+
+$btn-color: rgb(6, 75, 165);
+
+$btn-color-letra:white;
+
+$hover-btn-color:rgb(22, 22, 22);
+
+@mixin boton($btn-color, $hover-btn-color, $color-texto, $ancho: 280px) {
+    display: inline-block;
+    color: $color-texto;
+    font-family: $fuente-principal;
+    background-color: $btn-color;
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    width: $ancho;
+    text-align: left;
+
+    &:hover {
+        background-color: $hover-btn-color;
+    }
+}

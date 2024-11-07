@@ -145,6 +145,9 @@
             .text2{
                 font-size: 14px;
             }
+            .imagen2{
+                margin-bottom: 20px;
+            }
         }
         .mitad-flex3{
             justify-content: center;
@@ -168,28 +171,32 @@
     .brand-new-cars-container{
         display: flex;
         flex-direction: column;
-        background-color: #ebeaea;
+        background-color: white;
         .checkbox-car-list{
             display: flex;
             flex-direction: column;
             text-align: center;
             padding: 20px;
             width: 100%;
+            .publicidad{
+                display: none;
+            }
             h2{
-                font-family: Arial, Helvetica, sans-serif;
+                font-family: $fuente-principal;
                 font-weight: bold;
+                align-items: left;
             }
             h3{
                 display: none;
             }
             .car-filter{
-                display: flex;
+                display: none;
                 flex-direction: row;
                 display: none;
                 button{
                     color: white;
-                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                    background-color: rgb(6, 75, 165);
+                    font-family: $fuente-principal;
+                    background-color: $btn-color;
                     padding: 5px;
                     border-radius: 5px;
                     box-shadow: #fff;
@@ -207,17 +214,19 @@
             margin-bottom: 50px;
             .car-container{
                 flex: 5;
-                .vehicle-container{
-                    width: 300px;
+                align-items: center;
+                .card{
+                    width: 250px;
                     flex-direction: column;
+                    justify-content: center;
                 }
                 h3{
-                    font-family: Arial, Helvetica, sans-serif;
+                    font-family: $fuente-principal;
                     font-weight: bold;
                     font-size: medium;
                 }
                 h4{
-                    font-family: Arial, Helvetica, sans-serif;
+                    font-family: $fuente-principal;
                     font-weight: bold;
                     font-size: medium;
                 }
@@ -356,12 +365,12 @@
                     flex-direction: column;
                 }
                 h3{
-                    font-family: Arial, Helvetica, sans-serif;
+                    font-family: $fuente-principal;
                     font-weight: bold;
                     font-size: medium;
                 }
                 h4{
-                    font-family: Arial, Helvetica, sans-serif;
+                    font-family: $fuente-principal;
                     font-weight: bold;
                     font-size: medium;
                 }

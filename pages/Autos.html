@@ -12,27 +12,57 @@
 
 <body>
     <header>
-        <a href="">
-            <h1>Power Motors</h1>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./Modelos.html">MODELOS 0KM</a></li>
-                <li><a href="./Autos.html">AUTOS</a></li>
-                <li><a href="./Motos.html">MOTOS</a></li>
-                <li><a href="./Contactenos.html">CONTACTENOS</a></li>
-            </ul>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <!--Logo-->
+                <a class="navbar-brand fs-4" href="../index.html"><img src="../img/favicon.ico" alt="Logo de la empresa">Power Motors</a>
+                <!--Toggle Button-->
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--SideBar-->
+                <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <!--SideBar Header-->
+                    <div class="offcanvas-header text-black border-bottom">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Power Motors</h5>
+                        <button type="button" class="btn-close btn-close-black shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <!--SideBar Body-->
+                    <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-4">
+                        <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="../pages/modelos.html">MODELOS 0KM</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link active" href="../pages/autos.html">AUTOS</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="../pages/motos.html">MOTOS</a>
+                            </li>
+                        </ul>
+                        <!--Contact Button-->
+                        <div class="contact-button d-flex justify-content-center align-items-center gap-3">
+                            <a href="../pages/contactenos.html" class="btn-contact">CONTÁCTENOS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <section class="brand-new-cars-container">
         <div class="checkbox-car-list">
             <h2>Autos Usados</h2>
-            <h3>Vehículos disponibles</h3>
+            <p>12 resultados</p>
             <h3>Marca:</h3>
             <div class="car-filter">
-                <input type="text" placeholder="Buscar por marca">
-                <button type="button">Search</button>
+                <input type="text" placeholder="Buscar por marca" value="Buscar marca">
+                <button type="button">Buscar</button>
                 <label><input type="checkbox">Peugeot</label>
                 <label><input type="checkbox">Citroen</label>
                 <label><input type="checkbox">Bmw</label>
@@ -44,89 +74,170 @@
                 <label><input type="checkbox">Subaru</label>
                 <label><input type="checkbox">Honda</label>
             </div>
+            <div class="publicidad">
+                <h3>Seccion para publicidad</h3>
+            </div>
         </div>
         <div class="otra-mitad">
             <div class="car-container">
-                <img src="../img/carcontainer.jpg" alt="vehicle" class="vehicle-container">
-                <h3 class="car-name">Auto(Ejemplo)</h3>
-                <h4 class="price">8.000U$D</h4>
-                <a href="./Contactenos.html">Más información</a>
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/peugeot206.jpg" class="card-img-top" alt="Imagen de auto a la venta(350.000km)">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del auto usado</h5>
+                      <h6>$6.500</h6>
+                      <p class="card-text">2006 | 350.000km</p>
+                      <a href="#" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
             </div>
             <div class="car-container">
-                <img src="../img/carcontainer.jpg" alt="vehicle" class="vehicle-container">
-                <h3 class="car-name">Auto(Ejemplo)</h3>
-                <h4 class="price">8.000U$D</h4>
-                <a href="./Contactenos.html">Más información</a>
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/peugeot206.jpg" class="card-img-top" alt="Imagen de auto a la venta(350.000km)">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del auto usado</h5>
+                      <h6>$6.500</h6>
+                      <p class="card-text">2006 | 350.000km</p>
+                      <a href="#" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
             </div>
             <div class="car-container">
-                <img src="../img/carcontainer.jpg" alt="vehicle" class="vehicle-container">
-                <h3 class="car-name">Auto(Ejemplo)</h3>
-                <h4 class="price">8.000U$D</h4>
-                <a href="./Contactenos.html">Más información</a>
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/peugeot206.jpg" class="card-img-top" alt="Imagen de auto a la venta(350.000km)">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del auto usado</h5>
+                      <h6>$6.500</h6>
+                      <p class="card-text">2006 | 350.000km</p>
+                      <a href="#" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
             </div>
             <div class="car-container">
-                <img src="../img/carcontainer.jpg" alt="vehicle" class="vehicle-container">
-                <h3 class="car-name">Auto(Ejemplo)</h3>
-                <h4 class="price">8.000U$D</h4>
-                <a href="./Contactenos.html">Más información</a>
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/peugeot206.jpg" class="card-img-top" alt="Imagen de auto a la venta(350.000km)">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del auto usado</h5>
+                      <h6>$6.500</h6>
+                      <p class="card-text">2006 | 350.000km</p>
+                      <a href="#" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
             </div>
             <div class="car-container">
-                <img src="../img/carcontainer.jpg" alt="vehicle" class="vehicle-container">
-                <h3 class="car-name">Auto(Ejemplo)</h3>
-                <h4 class="price">8.000U$D</h4>
-                <a href="./Contactenos.html">Más información</a>
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/peugeot206.jpg" class="card-img-top" alt="Imagen de auto a la venta(350.000km)">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del auto usado</h5>
+                      <h6>$6.500</h6>
+                      <p class="card-text">2006 | 350.000km</p>
+                      <a href="#" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
             </div>
             <div class="car-container">
-                <img src="../img/carcontainer.jpg" alt="vehicle" class="vehicle-container">
-                <h3 class="car-name">Auto(Ejemplo)</h3>
-                <h4 class="price">8.000U$D</h4>
-                <a href="./Contactenos.html">Más información</a>
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/peugeot206.jpg" class="card-img-top" alt="Imagen de auto a la venta(350.000km)">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del auto usado</h5>
+                      <h6>$6.500</h6>
+                      <p class="card-text">2006 | 350.000km</p>
+                      <a href="#" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
             </div>
             <div class="car-container">
-                <img src="../img/carcontainer.jpg" alt="vehicle" class="vehicle-container">
-                <h3 class="car-name">Auto(Ejemplo)</h3>
-                <h4 class="price">8.000U$D</h4>
-                <a href="./Contactenos.html">Más información</a>
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/peugeot206.jpg" class="card-img-top" alt="Imagen de auto a la venta(350.000km)">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del auto usado</h5>
+                      <h6>$6.500</h6>
+                      <p class="card-text">2006 | 350.000km</p>
+                      <a href="#" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
             </div>
             <div class="car-container">
-                <img src="../img/carcontainer.jpg" alt="vehicle" class="vehicle-container">
-                <h3 class="car-name">Auto(Ejemplo)</h3>
-                <h4 class="price">8.000U$D</h4>
-                <a href="./Contactenos.html">Más información</a>
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/peugeot206.jpg" class="card-img-top" alt="Imagen de auto a la venta(350.000km)">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del auto usado</h5>
+                      <h6>$6.500</h6>
+                      <p class="card-text">2006 | 350.000km</p>
+                      <a href="#" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
             </div>
             <div class="car-container">
-                <img src="../img/carcontainer.jpg" alt="vehicle" class="vehicle-container">
-                <h3 class="car-name">Auto(Ejemplo)</h3>
-                <h4 class="price">8.000U$D</h4>
-                <a href="./Contactenos.html">Más información</a>
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/peugeot206.jpg" class="card-img-top" alt="Imagen de auto a la venta(350.000km)">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del auto usado</h5>
+                      <h6>$6.500</h6>
+                      <p class="card-text">2006 | 350.000km</p>
+                      <a href="#" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-container">
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/peugeot206.jpg" class="card-img-top" alt="Imagen de auto a la venta(350.000km)">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del auto usado</h5>
+                      <h6>$6.500</h6>
+                      <p class="card-text">2006 | 350.000km</p>
+                      <a href="#" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-container">
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/peugeot206.jpg" class="card-img-top" alt="Imagen de auto a la venta(350.000km)">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del auto usado</h5>
+                      <h6>$6.500</h6>
+                      <p class="card-text">2006 | 350.000km</p>
+                      <a href="#" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-container">
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/peugeot206.jpg" class="card-img-top" alt="Imagen de auto a la venta(350.000km)">
+                    <div class="card-body">
+                      <h5 class="card-title">Nombre del auto usado</h5>
+                      <h6>$6.500</h6>
+                      <p class="card-text">2006 | 350.000km</p>
+                      <a href="#" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <footer>
         <div class="logo-footer">
             <h2>Power Motors</h2>
-            <p>La mejor experiencia en autos y motos.</p>
+            <p>La mejor asesoria a la hora de comprar autos nuevos, usados e incluso motos.</p>
         </div>
         <div class="links-footer">
             <h3>Enlaces útiles</h3>
             <ul>
-                <li><a href="./Modelos.html">Modelos</a></li>
-                <li><a href="./Autos.html">Autos</a></li>
-                <li><a href="./Motos.html">Motos</a></li>
-                <li><a href="./Contactenos.html">Contáctenos</a></li>
+                <li><a href="../pages/modelos.html">Modelos</a></li>
+                <li><a href="../pages/autos.html">Autos</a></li>
+                <li><a href="../pages/motos.html">Motos</a></li>
+                <li><a href="../pages/contactenos.html">Contáctenos</a></li>
             </ul>
         </div>
         <div class="contacto-footer">
             <h3>Contáctanos</h3>
-            <p>Teléfono: </p>
-            <p>Email: powermotors@contacto.com</p>
+            <p><img src="../img/directorio-telefonico.png" alt="">Teléfono: (+598)76223556.</p>
+            <p><img src="../img/gmail.png" alt=""> powermotors@contacto.com</p>
         </div>
         <div class="redes-footer">
             <h3>Síguenos</h3>
             <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Twitter</a></li>
+                <li><a href="#"><img src="../img/facebook.png" alt="logo de facebook con link hacia la pagina de la empresa">Facebook</a></li>
+                <li><a href="#"><img src="../img/instagram.png" alt="logo de instagram con link hacia la pagina de la empresa">Instagram</a></li>
+                <li><a href="#"><img src="../img/xlogo.png" alt="logo de twitter/x con link hacia la pagina de la empresa">Twitter</a></li>
             </ul>
         </div>
     </footer>

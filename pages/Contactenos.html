@@ -12,17 +12,47 @@
 
 <body>
     <header>
-        <a href="">
-            <h1>Power Motors</h1>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./Modelos.html">MODELOS 0KM</a></li>
-                <li><a href="./Autos.html">AUTOS</a></li>
-                <li><a href="./Motos.html">MOTOS</a></li>
-                <li><a href="./Contactenos.html">CONTACTENOS</a></li>
-            </ul>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <!--Logo-->
+                <a class="navbar-brand fs-4" href="../index.html"><img src="../img/favicon.ico" alt="Logo de la empresa">Power Motors</a>
+                <!--Toggle Button-->
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--SideBar-->
+                <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <!--SideBar Header-->
+                    <div class="offcanvas-header text-black border-bottom">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Power Motors</h5>
+                        <button type="button" class="btn-close btn-close-black shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <!--SideBar Body-->
+                    <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-4">
+                        <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="../pages/modelos.html">MODELOS 0KM</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="../pages/autos.html">AUTOS</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="../pages/motos.html">MOTOS</a>
+                            </li>
+                        </ul>
+                        <!--Contact Button-->
+                        <div class="contact-button d-flex justify-content-center align-items-center gap-3">
+                            <a href="../pages/contactenos.html" class="btn-contact ">CONTÁCTENOS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -51,7 +81,7 @@
             <div class="sucursales">
                 <div class="location-box">
                     <div class="box-info">
-                        <img src="../img/image.png" alt="location-ping">
+                        <img src="../img/image.png" alt="Imagen de ping usado para referir a la ubicacion de una sucursal">
                         <h3>CIUDAD DE LA COSTA</h3>
                         <p>
                             Av. Giannattasio Km 28500
@@ -61,7 +91,7 @@
                 </div>
                 <div class="location-box">
                     <div class="box-info">
-                        <img src="../img/image.png" alt="location-ping">
+                        <img src="../img/image.png" alt="Imagen de ping usado para referir a la ubicacion de una sucursal">
                         <h3>PUNTA DEL ESTE</h3>
                         <p>
                             Bvr. Artigas, 20000 Punta del Este
@@ -71,7 +101,7 @@
                 </div>
                 <div class="location-box">
                     <div class="box-info">
-                        <img src="../img/image.png" alt="location-ping">
+                        <img src="../img/image.png" alt="Imagen de ping usado para referir a la ubicacion de una sucursal">
                         <h3>CIUDAD DE SALTO</h3>
                         <p>
                             Av. José Batlle Y Ordóñez 2265, 50000 Salto
@@ -90,10 +120,10 @@
         <div class="links-footer">
             <h3>Enlaces útiles</h3>
             <ul>
-                <li><a href="./Modelos.html">Modelos</a></li>
-                <li><a href="./Autos.html">Autos</a></li>
-                <li><a href="./Motos.html">Motos</a></li>
-                <li><a href="./Contactenos.html">Contáctenos</a></li>
+                <li><a href="./modelos.html">Modelos</a></li>
+                <li><a href="./autos.html">Autos</a></li>
+                <li><a href="./motos.html">Motos</a></li>
+                <li><a href="./contactenos.html">Contáctenos</a></li>>
             </ul>
         </div>
         <div class="contacto-footer">

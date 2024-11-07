@@ -1,43 +1,45 @@
 header{
-    background-color: rgb(202, 202, 202);
-    padding: 20px;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    width: 100%;
-    a{
-        text-decoration: none;
-        h1{
-            color: rgb(6, 75, 165);
-            font-size: 40px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-            margin-left: 10px;
-
-        }
-    }
     nav{
-        ul{
-            list-style: none;
-            font-size: 20px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-weight: bold;
-            display: flex;
-            justify-content: space-between;
+       div{
+        .navbar-brand{
+            font-family: $fuente-principal;
+            img{
+                margin: 10px;
+            }
+        }
+        .sidebar{
+            background-color: whitesmoke;
+           } 
+           .offcanvas-header{
+            h5{
+               font-family: $fuente-principal;
+            }
+           }
+       }
+       .offcanvas-body{
+        .navbar-nav{
             li{
-                margin-right: 10px;
                 a{
-                    color: black;
-                    margin-right: 15px;
-                    font-weight: bold;
-                    &:hover{
-                        color: rgb(6, 75, 165);
-                    }
-
+                    font-family: $fuente-principal;
+                    
                 }
             }
         }
+        .contact-button{
+            .btn-contact{
+                font-family: $fuente-principal;
+                color: white;
+                text-decoration: none;
+                padding: 0.25rem 1rem;
+                border-radius: 5px;
+                background-color: $btn-color;
+                box-shadow: none;
+                transition: background-color 0.3s ease;
+                &:hover{
+                    background-color: $hover-btn-color;
+                }
+            }
+        }
+       }
     }
 }
